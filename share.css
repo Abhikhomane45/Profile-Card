@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100vh;
+    place-items:center;
+   background:grey;
+
+}
+.maindiv{
+    position:relative ;
+    height: 65px;
+    width:250px;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 5px 3px 0px rgb(0,0,0,0.35);
+    
+}
+.maindiv::before{
+    content: 'SOCIALS';
+    position:absolute ;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    color:grey;
+    font-size:26px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.5s linear ;
+
+}
+
+.maindiv:hover::before{
+    left: -250px;
+}
+
+.maindiv .social{
+    position:absolute;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.5s ease-in-out;
+
+}
+.maindiv:hover .social{
+    right: 0;
+
+}
+.social i{
+     font-size:22px ;
+     color:blue;
+}
+.social i:hover{
+    transform: scale(1.1);
+}
