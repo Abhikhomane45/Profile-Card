@@ -1,4 +1,4 @@
-# 🌐 CodSoft Project 4 – Social Media Links Page
+# 🌐 Profile Card – Social Media Links Page
 
 This project is a **web page** developed as part of the **CodSoft Virtual Internship (Web Development)**.  
 It features a hoverable social media box that reveals icons linked to your profiles.
